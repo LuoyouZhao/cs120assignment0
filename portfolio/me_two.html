@@ -1,11 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Coming Soon</title>
+  <title>About Me</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+
+    h1, h2 {
+      color: #333; /* Dark grey color */
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      font-size: 32px; /* Adjust size as needed */
+    }
+
+    h2 {
+      font-size: 24px; /* Adjust size as needed */
+    }
+
+    img {
+      float: right;
+      margin: 0 0 10px 10px;
+    }
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 10px;
+    }
+    table tr:nth-child(odd) {
+      background-color: #f2f2f2; /* Light grey for odd rows */
+    }
+
+    table tr:nth-child(even) {
+      background-color: #ffffff; /* White for even rows (or simply omit this rule if your table's background is already white) */
+    }
+    /* CSS */
+    .list-container {
+      border: 2px solid #333; /* Example border */
+      width: 50%; /* Adjust width as needed */
+      margin: 0 auto; /* Center the div */
+      padding: 20px; /* Optional: adds some space inside the border */
+    }
+
+    .food-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px; /* Adjust as needed */
+    }
+
+    .food-image {
+      width: 300px; /* Adjust size as needed */
+      height: 200px; /* Adjust size as needed */
+      background-image: url('../dandan_noodle.jpeg'); /* Adjust path as needed */
+      background-size: cover;
+      margin-right: 20px;
+    }
+
+    .food-description {
+      flex: 1;
+    }
+
+    .social-icons {
+      position: fixed;
+      top: 100px;
+      right: 35px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    .social-icons a img {
+      width: 30px;
+      height: 30px;
+      margin: 5px 0;
+    }
+
+    @media (max-width: 980px) {
+      .food-container {
+        flex-direction: column;
+      }
+
+      .food-image {
+        width: 100%;
+        margin-right: 0;
+      }
+
+      .list-container {
+        width: 80%;
+      }
+
+      .social-icons {
+        right: 10px;
+      }
+    }
+
+  </style>
+
 </head>
+
 <body>
-<h1>Coming Soon</h1>
+<h1>Luoyou Zhao</h1>
+<p>This winter break, I had an awesome time skiing at Keystone in Colorado! The snow was perfect, and the slopes were thrilling. It felt amazing to glide down the mountains with the cold wind in my face. Definitely a trip to remember!</p>
+<div class="list-container">
+  <ul>
+    <li>A cat named Yumi</li>
+    <li>A dog named Yuki</li>
+    <li>A parrot named Wudong</li>
+  </ul>
+</div>
+
+<div class="social-icons">
+  <a href="https://facebook.com" target="_blank"><img src="./facebook.png" alt="Facebook"></a>
+  <a href="https://twitter.com" target="_blank"><img src="./x.png" alt="x"></a>
+</div>
+
+
+<div class="food-container">
+  <div class="food-image"></div>
+  <div class="food-description">
+    <p>One of my all-time favorite dishes is Dan Dan Noodles, a classic Sichuan dish known for its spicy, savory, and slightly sweet flavors. The perfectly cooked noodles mixed with the ground pork, preserved vegetables, and that essential spicy sauce create a mouthwatering experience. I love serving it with a sprinkle of green onions and a side of crispy wontons, making it the ultimate comfort food for any day.</p>
+  </div>
+</div>
+
+
+<table>
+  <tr>
+    <td>Fall of Giants</td>
+    <td><img src="../the_fall_of_the_giant.jpeg" alt="Fall of Giants Cover" style="width:100px;height:150px;"></td>
+    <td>Ken Follett</td>
+    <td>This epic historical novel is the first in the Century Trilogy, spanning the major events of the 20th century through five interrelated families.</td>
+  </tr>
+  <tr>
+    <td>A New Account of the Tales of the World</td>
+    <td><img src="../shishuo_xinyu.jpeg" alt="A New Account of the Tales of the World Cover" style="width:100px;height:150px;"></td>
+    <td>Liu Yiqing</td>
+    <td>Compiled during the Liu Song dynasty, this classic Chinese text offers a fascinating glimpse into the lives and anecdotes of the Wei and Jin dynasties' literati.</td>
+  </tr>
+  <tr>
+    <td>The Tokyo Zodiac Murders</td>
+    <td><img src="../The Tokyo Zodiac Murders.jpeg" alt="The Tokyo Zodiac Murders Cover" style="width:100px;height:150px;"></td>
+    <td>Soji Shimada</td>
+    <td>A masterpiece of the Honkaku mystery genre, this novel presents a series of complex puzzles wrapped around a bizarre set of murders linked to the zodiac.</td>
+  </tr>
+  <tr>
+    <td>Millennium</td>
+    <td><img src="../Millennium.jpeg" alt="Millennium Cover" style="width:100px;height:150px;"></td>
+    <td>Stieg Larsson</td>
+    <td>Beginning with "The Girl with the Dragon Tattoo," this gripping series blends mystery, intrigue, and social commentary, centered around journalist Mikael Blomkvist and hacker Lisbeth Salander.</td>
+  </tr>
+
+</table>
+
+<form>
+  <div class="form-row">
+    <label for="first-name">First Name:</label>
+    <input type="text" id="first-name" name="first-name">
+  </div>
+  <div class="form-row">
+    <label for="last-name">Last Name:</label>
+    <input type="text" id="last-name" name="last-name">
+  </div>
+  <div class="form-row">
+    <label for="city">City:</label>
+    <input type="text" id="city" name="city">
+  </div>
+  <div class="form-row">
+    <label for="state">State:</label>
+    <select id="state" name="state">
+      <option value="">Please select</option>
+      <option value="ny">New York</option>
+      <option value="ca">California</option>
+      <option value="tx">Texas</option>
+      <option value="tx">Ohio</option>
+    </select>
+  </div>
+  <div class="form-row">
+    <input type="submit" value="Submit">
+  </div>
+</form>
+
 </body>
 </html>
